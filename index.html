@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+
+    <script src="renderer.js"></script>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <button type="button" name="info" id="info">Click For Info</button>
+    <br>
+    <div id="test">
+    </div>
+      test
+    <br>
+
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <div id="para">
+      We are using Node.js <script>document.write(process.versions.node)</script>,
+      Chromium <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.
+    </div>
+
+  </body>
+
+ <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
